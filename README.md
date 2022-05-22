@@ -9,7 +9,8 @@ git clone https://github.com/benni347/calculate_pi_rust_python.git
 cd calculate_pi_rust_python
 ```
 
-|     Rust:     |        Python:        |
-|:-------------:|:---------------------:|
-|   `cd rust`   |      `cd python`      |
-| `cargo build` | `python calculate.py` |
+|     Rust:      |        Python:        |
+|:--------------:|:---------------------:|
+|   `cd rust`    |      `cd python`      |
+| `cargo build`  | `python calculate.py` |
+| `cargo run`    | 
