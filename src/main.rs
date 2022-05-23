@@ -7,16 +7,19 @@ fn factorial(n: u128) -> u128 {
 
 fn sqrt(mut n: f64) -> f64 {
     if n < 0.0 {
-        raise_error("Cannot calculate square root of negative number");
+        raise_error!("Cannot calculate square root of negative number");
     } else {
         n = n.powf(0.5);
     }
     n
 }
 
-fn raise_error(msg: &str) -> ! {
-    println!("{}", msg);
-    panic!();
+// define a macro to raise an error with a msg that is passed as a string
+#[macro_export]
+macro_rules! raise_error {
+    ($msg:expr) => {
+        panic!($msg);
+    }
 }
 
 
